@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h3> Uncultured sulfate-reducing bacterium clone GOMGC2B07F DsrA (dsrA) gene </h3>
+<p>ACTGGAAGCACGGCGGCATCGTGGGCGTGCTGGGTTATGGTGGAGGCGTCATCGGCCGCTATTGCGACCG
+GCCGGACCTCTTCCCAGAAGTGGCCCACTTTCACACCATGCGCATCAACCAGCCCTCGAGCAAGTTTTAC
+AATACCGACATCCTGAAAAGACTCCGTGAACTGTGGGAAAGGCGCGGCAGCGGCCTCACCAACATGCATG
+GTTCAACGGGGGACATCATCCTGCTCGGTACCACCACCAATGAACTGGAGCCCATATTCTATGAATTGAC
+CCACGATTTGAATATGGACCTGGGCGGTTCGGGCTCCAACTTGCGCACACCGAGCTGCTGTCTGGGCAAG
+GCCCGTTGCGAGTGGTCCTGCCTTGACACTCAGGCCATCACCAACGACATTACCCATGAGTTCCAGGACG
+AGCCTTATCGACCCGCCTTTCCTTACAAGTTCAAGTTCAAGACCTCCGGCTGCCCCAACGACTGTGTGGC
+CGCCATTGCCCGGGCCGACTGCTCCATCATCGGCACCTGGCGCGATCAGATCCGCATCGACCAGGAGGCT
+GTAAAGGCCTACGCTGCCGGGGAACTGGCCCCCAACGGCAATGCCTTCGATACGGGACCAAGTGCTCTGG
+ACATCCAGAAAGAGGTCTGTGACCTGTGCCCCACCCGTTGCATGGAATGGGACGGCAAGACCCTGAAATC
+TGGGGATGAAGAGTGCAC</p>
+
+
+<button onclick="myFunction()">Total Number of Nucleotides</button>
+
+
+<p id="DIY"></p>
+
+<script>
+
+  var dna = "ACTGGAAGCACGGCGGCATCGTGGGCGTGCTGGGTTATGGTGGAGGCGTCATCGGCCGCTATTGCGACCGGCCGGACCTCTTCCCAGAAGTGGCCCACTTTCACACCATGCGCATCAACCAGCCCTCGAGCAAGTTTTACAATACCGACATCCTGAAAAGACTCCGTGAACTGTGGGAAAGGCGCGGCAGCGGCCTCACCAACATGCATGGTTCAACGGGGGACATCATCCTGCTCGGTACCACCACCAATGAACTGGAGCCCATATTCTATGAATTGACCCACGATTTGAATATGGACCTGGGCGGTTCGGGCTCCAACTTGCGCACACCGAGCTGCTGTCTGGGCAAGGCCCGTTGCGAGTGGTCCTGCCTTGACACTCAGGCCATCACCAACGACATTACCCATGAGTTCCAGGACGAGCCTTATCGACCCGCCTTTCCTTACAAGTTCAAGTTCAAGACCTCCGGCTGCCCCAACGACTGTGTGGCCGCCATTGCCCGGGCCGACTGCTCCATCATCGGCACCTGGCGCGATCAGATCCGCATCGACCAGGAGGCTGTAAAGGCCTACGCTGCCGGGGAACTGGCCCCCAACGGCAATGCCTTCGATACGGGACCAAGTGCTCTGGACATCCAGAAAGAGGTCTGTGACCTGTGCCCCACCCGTTGCATGGAATGGGACGGCAAGACCCTGAAATCTGGGGATGAAGAGTGCAC";
+  var n = dna.length;
+  function myFunction() {
+  document.getElementById("DIY").innerHTML = n;
+}
+  
+</script>
+
+
+
+
+
+
+
+<br><br><br>
+
+<button onclick="aSequence()">Total Number of 'A' Nucleotides</button>
+
+<p id="anucleus"></p>
+
+<script>
+  var match1 = dna.match(/A/g).length;
+  function aSequence() {
+  document.getElementById("anucleus").innerHTML = match1;
+}
+</script>
+
+<button onclick="aPer()">Percentage of 'A' Base</button>
+<p id="aBase"></p>
+<script>
+  var per1 = (match1/n)*100;
+  function aPer() {
+  document.getElementById("aBase").innerHTML = per1 +'%';
+}
+</script>
+
+
+
+
+<br><br><br>
+
+<button onclick="gSequence()">Total Number of 'G' Nucleotides</button>
+
+<p id="gnucleus"></p>
+
+<script>
+  var match2 = dna.match(/G/g).length;
+  function gSequence() {
+  document.getElementById("gnucleus").innerHTML = match2;
+}
+</script>
+
+<button onclick="gPer()">Percentage of 'G' Base</button>
+<p id="gBase"></p>
+<script>
+  var per2 = (match2/n)*100;
+  function gPer() {
+  document.getElementById("gBase").innerHTML = per2 +'%';
+}
+</script>
+
+
+
+
+
+<br><br><br>
+
+<button onclick="cSequence()">Total Number of 'C' Nucleotides</button>
+
+<p id="cnucleus"></p>
+
+<script> 
+  var match3 = dna.match(/C/g).length;
+  function cSequence() {
+  document.getElementById("cnucleus").innerHTML = match3;
+}
+</script>
+
+<button onclick="cPer()">Percentage of 'C' Base</button>
+<p id="cBase"></p>
+<script>
+  var per3 = (match3/n)*100;
+  function cPer() {
+  document.getElementById("cBase").innerHTML = per3 +'%';
+}
+</script>
+
+
+
+
+
+<br><br><br>
+
+<button onclick="tSequence()">Total Number of 'T' Nucleotides</button>
+
+<p id="tnucleus"></p>
+
+<script>
+  var match4 = dna.match(/T/g).length;
+  function tSequence() {
+  document.getElementById("tnucleus").innerHTML = match4;
+}
+</script>
+
+<button onclick="tPer()">Percentage of 'T' Base</button>
+<p id="tBase"></p>
+<script>
+  var per4 = (match4/n)*100;
+  function tPer() {
+  document.getElementById("tBase").innerHTML = per4 +'%';
+}
+</script>
+
+<br><br>
+</body>
+</html>
+
+
